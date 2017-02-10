@@ -1,0 +1,11 @@
+# Set input paths for county being mapped
+# Requires paths to: MAPPING_FOLDER, MAPPING_METHOD_POLYGON, and TERRAIN
+
+# Mapping folder
+MAPPING_FOLDER = "P:/02/NY/Cayuga_Co_36011C/STUDY__TO90/TECHNICAL/ENG_FLOOD_HAZ_DEV/COASTAL/MAPPING/"
+
+# Location of mapping method polygon shapefile
+MAPPING_METHOD_POLYGON = "P:/02/NY/Cayuga_Co_36011C/STUDY__TO90/TECHNICAL/ENG_FLOOD_HAZ_DEV/COASTAL/MAPPING/Cayuga_NY_Mapping_Method.shp"
+
+# Location of terrain
+TERRAIN = "P:/02/NY/Cayuga_Co_36011C/STUDY__TO90/GIS/DATA/TOPO/Terrain/Cayuga_Terrain_FINAL_DO_NOT_EDIT.gdb/Cay_Terrain"

@@ -77,7 +77,7 @@ def steep_slope():
     """ Table D.4.5-7 'Equations for Wave Overtopping', steeply sloping structures. """
     h_star = (h**2)/(H_MO*L_OM)
 
-    if All_approaching_waves_broken == False:
+    if All_approaching_waves_broken is False:
         # Some approaching waves are broken
         if h_star >= 0.3:
             # Non-Breaking waves
@@ -90,7 +90,7 @@ def steep_slope():
             q_big = 0.000137*f_prm**(-3.24)
             q_sml = q_big * (g*(h**3))**(0.5) * h_star**2
 
-    elif All_approaching_waves_broken == True:
+    elif All_approaching_waves_broken is True:
         # All approaching waves are broken
         if structure_toe <= dwl2wl:
             # Structure toe below the DWL2% Water Level

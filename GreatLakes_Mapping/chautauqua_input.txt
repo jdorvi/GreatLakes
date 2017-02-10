@@ -1,8 +1,8 @@
 # Set input paths for county being mapped
-# Requires paths to: SOURCE_DIRECTORY, MAPPING_METHOD_POLYGON, and TERRAIN
+# Requires paths to: MAPPING_FOLDER, MAPPING_METHOD_POLYGON, and TERRAIN
 
 # Study directory
-SOURCE_DIRECTORY = "P:/02/NY/Chautauqua_Co_36013C/STUDY__TO90"
+MAPPING_FOLDER = "P:/02/NY/Chautauqua_Co_36013C/STUDY__TO90/TECHNICAL/ENG_FLOOD_HAZ_DEV/COASTAL/MAPPING/"
 
 # Location of mapping method polygon shapefile
 MAPPING_METHOD_POLYGON = "P:/02/NY/Chautauqua_Co_36013C/STUDY__TO90/TECHNICAL/ENG_FLOOD_HAZ_DEV/COASTAL/MAPPING/Chautauqua_NY_Mapping_Method.shp"
