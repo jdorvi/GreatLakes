@@ -1,10 +1,20 @@
-""" Automating coastal modeling mapping process """
+""" Automate attribution of coastal Mapping_Method polygons during coastal modeling
+mapping process """
+# -*- coding: utf-8 -*-
+# ---------------------------------------------------------------------------
+# mapping_method.py
+# Created on: 2016-12-19
+# Usage:
+# Description:
+# Author: J. Dorvinen
+# Email: jdorvinen@dewberry.com
+# ---------------------------------------------------------------------------
+
+# Import modules
 import archook
 archook.get_arcpy()
 import arcpy
 import os
-import numpy as np
-import pandas as pd
 from dataIO import dbf2df, df2dbf
 
 # Set working environment
