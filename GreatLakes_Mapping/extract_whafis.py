@@ -151,10 +151,10 @@ def find_controlling_params(filename):
 def main(outfile):
     """ main function """
     with open(outfile, 'w') as out:
-        out.write("   TRANSECT," +
-                  "WHAFIS_ZONE,WHAFIS_WAVE,WHAFIS_SWEL," +
+        out.write(" TRANSECT," +
+                  " WHAFIS_ZONE, WHAFIS_WAVE, WHAFIS_SWEL," +
                   " LIMWA_STAT, LIMWA_ELEV, LIMWA_SWEL," +
-                  "    VA_STAT,    VA_ELEV,    VA_SWEL\n")
+                  " VA_STAT, VA_ELEV, VA_SWEL\n")
         for i in range(1, TRANSECT_COUNT+1):
             # Update filename
             filename = os.path.join(DIRECT, WFILE.format(i))
@@ -169,9 +169,9 @@ def main(outfile):
             va_stat, va_elev, va_swel = find_vzone_gutter(filename)
 
             # Write WHAFIS data to output file
-            outtext = "{0:>11},{1:>11},{2:>11},{3:>11}," +\
+            outtext = "{0:>9},{1:>12},{2:>12},{3:>12}," +\
                       "{4:>11.2f},{5:>11.2f},{6:>11.2f}," +\
-                      "{7:>11.2f},{8:>11.2f},{9:>11.2f}\n"
+                      "{7:>8.2f},{8:>8.2f},{9:>8.2f}\n"
             outline = outtext.format(i,
                                      whafis_zone, whafis_wave, whafis_swel,
                                      limwa_stat, limwa_elev, limwa_swel,
